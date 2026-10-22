@@ -1,0 +1,26 @@
+---
+title: Taxonic - Automated Classification
+description: Taxonic is an API-first master classification engine powered by local dense vector embeddings that instantly translates messy, unstructured text into standardized global taxonomy codes with sub-50ms latency.
+category: Contactous Solutions
+toc: false
+fullWidth: true
+showLastModified: false
+disable_pager: true
+---
+
+Taxonic Automated Classification is a spreadsheet add-on which uses our API based classification engine powered by local dense vector embeddings that instantly translates messy, unstructured text into standardized global taxonomy codes with sub-50ms latency.
+
+Organizations across global trade, procurement, publishing, and manufacturing spend thousands of manual hours mapping messy, unstructured data—such as vendor invoices, book titles, or raw product descriptions—to rigid compliance standards like HECoS, HS Codes, UNSPSC, eClass, BISAC, or Dewey Decimal. Taxonic eliminates expensive enterprise Master Data Management (MDM) software deployments and labor-intensive manual data entry by providing an out-of-the-box, multi-tenant classification backend for standard global taxonomies. Operating on a local BAAI/bge-m3 vector embedding architecture, Taxonic slashes operational categorization effort from months down to sub-second API calls, delivering high semantic precision, multi-standard scoping, and zero token-based vendor costs.
+
+## Using Taxonic with Google Sheets
+Users can bulk-classify datasets directly inside Google Sheets using the Taxonic add-on or Google Apps Script integration:
+
+- Setup & Authentication: The user opens Google Sheets, launches the Taxonic Add-on sidebar, and enters their assigned X-Taxonic-API-Key.
+
+- Taxonomy Scoping: The user selects their target taxonomy standard (e.g., BISAC, THEMA, Dewey, UNSPSC, or HS_CODE) from a dropdown menu in the sidebar or directly within the formula parameters.
+
+- Formula Execution: In an empty output cell, the user types the custom formula =TAXONIC(title, description, standard), for example: =TAXONIC(A2, B2, "BISAC") where cell A2 contains the title and cell B2 contains the description.
+
+- Automated Bulk Population: Google Apps Script sends the request to Taxonic's /v1/classify endpoint, instantly populating the sheet with the top matching category code, description, and confidence score across thousands of spreadsheet rows.
+
+---

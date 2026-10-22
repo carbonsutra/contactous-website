@@ -1,0 +1,60 @@
+---
+toc: false
+fullWidth: true
+---
+# Assessments
+
+Build structured assessments, score submissions, and turn responses into useful insights.
+
+> **Demo content:** The examples below are illustrative placeholders for product discovery and UI development. Confirm production endpoints, authentication, and response schemas with the product team before integrating.
+
+## What you can do
+
+- Integrate Assessments into an existing application through a documented API workflow.
+- Validate requests and inspect structured responses during development.
+- Adapt sample payloads to your domain, policies, and data requirements.
+
+## Example request
+
+```http
+POST /api/v1/assessments/demo
+Authorization: Bearer YOUR_API_KEY
+Content-Type: application/json
+```
+
+```json
+{
+  "request_id": "demo-001",
+  "input": "sample assessments input",
+  "options": {
+    "mode": "demo",
+    "include_explanation": true
+  }
+}
+```
+
+## Example response
+
+```json
+{
+  "success": true,
+  "data": {
+    "id": "demo-result-001",
+    "product": "Assessments",
+    "status": "completed",
+    "result": "Illustrative Assessments result",
+    "confidence": 0.94
+  },
+  "request_id": "demo-001"
+}
+```
+
+## Common use cases
+
+- **Product teams:** add assessment tools capabilities to an application.
+- **Operations:** standardize repetitive workflows and outputs.
+- **Analytics:** pass structured results to reporting or downstream services.
+
+## Next steps
+
+Use the [Playground](/playground) to explore sample workflows, review the [API reference](/api), or [contact us](/contact) for access and production integration details.

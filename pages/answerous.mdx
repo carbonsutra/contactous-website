@@ -1,0 +1,106 @@
+---
+title: Retrieval Augmented Generation API
+description: Answerous is a fully managed Retrieval Augmented Generation (RAG) set of functions which are designed to give developers a simple set of flexible APIs with high quality output.
+category: Contactous API
+toc: false
+fullWidth: true
+showLastModified: false
+disable_pager: true
+---
+
+# Answerous
+
+Answerous is a fully managed Retrieval Augmented Generation (RAG) set of functions which are designed to give developers a simple set of flexible APIs with high quality output.  The objective is to perform both keyword and semantic search and ask questions with one or a set of documents. The moving parts of filtering through flexible metadata, intelligent semantic chunking algorithms, reranking, etc are hidden while providing a complete set of developer defined parameters to build custom AI models with full control.
+
+ The APIs can be tested within minutes and the documentation will help developers to easily integrate in their environment for accelerated application development. The free plan will immediately get you started as a developer without any risk and our team can be contacted for help. At its core, the APIs work on document ingestion and retrieval algorithms. The endgame is to perform both keyword and semantic search and ask questions with one or a set of documents. The moving parts of filtering through flexible metadata, intelligent semantic chunking algorithms, reranking, etc are hidden while providing a complete set of developer defined parameters to build custom AI models with full control. The Approach Think in terms of folders and documents, the familiar way we have always worked. You create a folder and add documents to it. And there are simple APIs for it. That's it - Nothing else to be done. The content (across a folder or a specific document) is ready to be searched or questioned. Metadata can be optionally added to each document for advance searching through filters. And then you can share the searchable folder with other users or your entire organization. There are two types of users - Developers and Organizations. A developers work on an application and integrates Answerous to add RAG functionality to it. The developer can then launch the application for an organization which can be accessed by thousands of users. The Organization calculates the overall usage of API and has granular reports of each user's activity. Answerous is free for developers. |  | 
+
+## The Design
+
+/users - Developer registration, retrieval, access, history and Organization functions
+
+/folders - Create, rename, delete and list a folder
+
+/documents - Add, rename, delete and list a document
+
+/search - Ask a question or search for keywords or concepts
+
+## Getting Started (Developer)
+
+
+1. Register (to get an Access Token)
+
+2. Add files
+
+3. Search
+
+
+## An Example
+
+Let's say Peter is a developer of a RAG-based AI application. He wants to first test the functionality of Answerous and test the app in his local environment. After full testing, he plans to deploy the application at his employer - Pawtucket Patriot Brewery, where he is an Administrator and has 3 users: Angela, Carter and Preston.
+
+
+__During Application Development__
+
+ 
+1. Peter registers as a developer at /users/register. In this case Peter is using the same email address as given by his company since Peter is an employee there. He uses org_id as "PPB" and org_name of "Pawtucket Patriot Brewery". The declaration of a unique org_id creates an Organization account within Answerous, one for PPB in this example. 
+
+2. Peter receives an Access Token - a string that starts with "answerous-". 
+
+3. Using Token-1, Peter tests the application in his local development environment, without incurring any cost. 
+
+4. Peter is now ready to roll the application at his employer's site as an Administrator.
+
+5. Peter now signs up for an Organization account at RapidAPI which enables him to manage users. 
+
+
+__During Application Deployment__
+
+
+  1. Now Peter can use the same Access Token for all API calls for PPB - from management of users to uploading documents and performing searches. 
+
+2. Using /users/add, Peter adds Angela, Carter and Preston as users within PPB. 
+
+3. Peter informs the users that the application is now live and the users can add their documents to start their search or Q&A. 
+
+4. Peter has a folder that can be accessed by selected employees within the company. He creates it by calling /folders/create and shares using /folders/share 
+
+5. The documents are added to right folders using /documents/add . Peter knows that there is no action required and the complexity of RAG is already taken care by Answerous. 
+
+__During Application Usage__ 
+
+1. Using Peter's application, the users are able to upload documents into their folders. Answerous API calls ensure indexing and vectorizing the data at backend. 
+
+2. PPB has purchased a few hundred digital books for its employees and intends to provide search and Q&A access to them. Peter simply creates a new folder (folders/create) and add all the books (/documents/add) to it and shares (/users/share) it with set of users. 
+
+3. Peter manages the content using /folders/list and monitors the usage and logs using /users/history
+
+
+
+## Frequently Asked Questions
+
+Explain the difference between Developer and Organization accounts. 
+> A developer account is for a single user who is usually a developer or a system administrator of an organization. It is a free account with an API key, capable of registering an organization. The developer has complete access to features of the platform except the ones to manage uses of an organization. Once a premium account of Organization is signed, the same developer can now manage users using the same access token. 
+
+Can the Developer be a user within the registered organization? 
+>Since a developer can be associated with multiple organizations, we recommend that developer maintains a separate account for every organization in which she can be a user too. For example, say Alice is the Developer (using a personal email address) and registers Organization-X. If Alice wants to be a user within this organization, it is recommended that she registers herself as a user with a Organization-X's email address. 
+
+What's the difference between a personal and shared folder? 
+>A folder can be searched across all its documents. A private folder's contents are visible only to its creator. However it becomes a shared folder when the owner invites multiple users to access its search results. As a real example, a small publisher has a few hundred books in a folder which has been shared by multiple users who can now search or ask questions from those books. 
+
+Which file formats are supported by Answerous for ingestion? 
+>Currently we support PDF, TXT (text) and MD (markdown). Just contact us if you need support for other formats.  
+
+Is the storage per user or for an organization? For an organization. 
+>There is a limit to the API calls, storage and folders for an organization which is calculation by adding the usage data of all users within that org. 
+
+Does the storage include the space used by indexes and vector databases 
+>No. It calculates the space used by uploaded files and documents. 
+
+Can use my own OpenAI keys? 
+>Not at this moment. However we do have plan to support this feature. 
+
+Where is Answerous hosted? 
+>It is 100% hosted on AWS' secure servers and can be accessed through RapidAPI using the link below. 
+
+What is the product roadmap of Answerous? 
+>Our roadmap is guided by requests of our customers. In future you can expect support for more file formats and advance algorithms for parsing of pdf documents.

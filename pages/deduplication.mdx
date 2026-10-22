@@ -1,0 +1,31 @@
+---
+title: Data DeDuplication
+description: Data Quality - DeDuplication
+category: Contactous API
+toc: false
+fullWidth: true
+showLastModified: false
+disable_pager: true
+---
+
+## DeDuplication
+
+​​A SaaS platform for DeDuplication of any type of database, irrespective of structure and size. Also available as an API, it uses advance AI pattern matching techniques to find similar data within a single or across data repositories. ​​Used for data preparation, complex de-duplication, entity resolution, transformation and merging/purging of large datasets. It is based on fuzzy logic based pattern matching algorithms which have been proven on tens of millions of records. 
+
+First, let's define Deduplication. It is the process of duplicate detection of contact records followed by another process which for each entity (person, company) in the database either merges the identifed duplicate records into one combined record, or remove some records from the database until it only contains a single record for each entity. 
+
+
+Contactous has options to run customizable pre-processes on the data, before deduplication. Examples of these pre-processes include removal of unwanted characters and words, expansion of abbreviations and correction of misspellings, segmenting attributes into consistent output attributes and more. Advance pre-processes include categorizing email addresses as Good/Bad/Doubtful or validating a data point with an external dataset. 
+
+
+Merging requires identification of a master record. The data from all other duplicate records merges into the master. The merging process can be manual or can be triggered to be executed by the system automatically. 
+
+| __Deduplication__ | __Description__ | 
+
+| Default | These functions are present in every Contactous instance by default - 1) Exact matching by Email, Names and Mobile numbers and 2) Smart matching of mobile numbers.  Exact match is simple. It is widely used by almost all users of Contactous. Smart matching of mobile numbers can identify different formats of a number as duplicates. For example, the following mobile numbers will detected as duplicates by the system: The master record in the default function is the last created record within that set of duplicates. | 
+
+|  | +91-98336-90611(9833) 690611 00 91 98336 90611 919833690611 0-98336-90611 (91)98336.90611 | 
+
+| Customized | The deduplication function can be customized to fit into an enterprise's requirements. The customization is done by Contactous or its partners. The deduplication process can be as complex as needed by the user.  Examples of customized deduplication are:  The master record can be selected by rules defined by users. For example, the master record can be selected based on its timestamp, source or some complex criteria based on its values.  If required, the duplicate records can remain in the system instead of getting deleted. These can be modified to a new set altogether by the program. Analytics are available to see number of duplicates by batches or source of records.  For discussion on customized deduplication, please contact us. | 
+
+|  | - Smart matching of names. For example, "Albert Einstein", "Dr. Albert Einstein", "Einstein, Albert" and "Dr Einstein, Albert" can be detected as duplicates, if that is the desired rule. It can be extended to include a name with typo error and records like "Alber Einstein" can be included in the duplicate set.  - Smart matching on Company Names. For example, the records with company names of "Contactous Pte Ltd", "Contact ous Pte. Ltd.", "Contactous (P) Ltd" and "Contactous" will be detected as duplicates.  - Smart matching on any other field, eg domain name from email address, website URLs, first/last N number of words of a field, etc.  - Pre-processes to segment attributes into consistent output ones can be applied to any field. For example, "101 Cecil Street", "101, Cecil Str" and "101 - Cecil St" can form a duplicate set.  - Exact matching by any field, eg company name  - Any combination of the above can be scenarios can be included within the duplicate detection rule set. |

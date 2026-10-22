@@ -1,0 +1,431 @@
+openapi: 3.0.3
+info:
+  title: Contactous Product APIs
+  version: 1.0.0
+  description:
+    Illustrative API catalogue for Contactous products. Demo endpoints and schemas are placeholders
+    for documentation/UI development; confirm real production endpoints with the product team.
+  contact:
+    name: Contactous
+    email: support@Contactous.com
+    url: https://Contactous.com
+servers:
+  - url: https://api.example.com
+    description: Placeholder server — configure API_URL
+tags:
+  - name: Contactous
+    description: Unified APIs for carbon intelligence, sustainability metrics, and environmental data.
+  - name: 2Markdown
+    description:
+      Convert web pages and documents into clean Markdown for search, knowledge bases, and AI
+      workflows.
+  - name: Scholia
+    description:
+      Research-paper processing and scholarly knowledge extraction for publishers, educators,
+      and research teams.
+  - name: Assessments
+    description: Build structured assessments, score submissions, and turn responses into useful insights.
+  - name: Airports & Location Intelligence
+    description:
+      Airport lookup, proximity, distance, and location-aware data services for travel and logistics
+      applications.
+  - name: Clustering
+    description: Group records and organize related information with configurable clustering APIs.
+  - name: ContentWeaver
+    description: Prepare, transform, and orchestrate content for downstream applications and AI pipelines.
+  - name: DeDuplication
+    description: Identify duplicate and near-duplicate records to improve data quality and reduce repetition.
+  - name: Answerous
+    description: Turn knowledge sources into clear, grounded answers for information and support workflows.
+  - name: Gaming
+    description: APIs and data utilities for game experiences, player workflows, and interactive applications.
+  - name: Categorization
+    description: Classify and label incoming text or records into consistent categories.
+  - name: Stylos
+    description:
+      Analyze text and documents for authorship signals with explainable, structured analysis
+      results.
+paths:
+  /demo/Contactous:
+    post:
+      tags:
+        - Contactous
+      summary: Contactous demo request
+      description:
+        Illustrative placeholder operation for Contactous. This is a documentation example
+        and is not guaranteed to be a live endpoint.
+      operationId: demo_Contactous
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/2markdown:
+    post:
+      tags:
+        - 2Markdown
+      summary: 2Markdown demo request
+      description:
+        Illustrative placeholder operation for 2Markdown. This is a documentation example and
+        is not guaranteed to be a live endpoint.
+      operationId: demo_2markdown
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/scholia:
+    post:
+      tags:
+        - Scholia
+      summary: Scholia demo request
+      description:
+        Illustrative placeholder operation for Scholia. This is a documentation example and
+        is not guaranteed to be a live endpoint.
+      operationId: demo_scholia
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/assessments:
+    post:
+      tags:
+        - Assessments
+      summary: Assessments demo request
+      description:
+        Illustrative placeholder operation for Assessments. This is a documentation example
+        and is not guaranteed to be a live endpoint.
+      operationId: demo_assessments
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/airports_location_intelligence:
+    post:
+      tags:
+        - Airports & Location Intelligence
+      summary: Airports & Location Intelligence demo request
+      description:
+        Illustrative placeholder operation for Airports & Location Intelligence. This is a
+        documentation example and is not guaranteed to be a live endpoint.
+      operationId: demo_airports_location_intelligence
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/clustering:
+    post:
+      tags:
+        - Clustering
+      summary: Clustering demo request
+      description:
+        Illustrative placeholder operation for Clustering. This is a documentation example
+        and is not guaranteed to be a live endpoint.
+      operationId: demo_clustering
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/contentweaver:
+    post:
+      tags:
+        - ContentWeaver
+      summary: ContentWeaver demo request
+      description:
+        Illustrative placeholder operation for ContentWeaver. This is a documentation example
+        and is not guaranteed to be a live endpoint.
+      operationId: demo_contentweaver
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/deduplication:
+    post:
+      tags:
+        - DeDuplication
+      summary: DeDuplication demo request
+      description:
+        Illustrative placeholder operation for DeDuplication. This is a documentation example
+        and is not guaranteed to be a live endpoint.
+      operationId: demo_deduplication
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/answerous:
+    post:
+      tags:
+        - Answerous
+      summary: Answerous demo request
+      description:
+        Illustrative placeholder operation for Answerous. This is a documentation example and
+        is not guaranteed to be a live endpoint.
+      operationId: demo_answerous
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/gaming:
+    post:
+      tags:
+        - Gaming
+      summary: Gaming demo request
+      description:
+        Illustrative placeholder operation for Gaming. This is a documentation example and
+        is not guaranteed to be a live endpoint.
+      operationId: demo_gaming
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/categorization:
+    post:
+      tags:
+        - Categorization
+      summary: Categorization demo request
+      description:
+        Illustrative placeholder operation for Categorization. This is a documentation example
+        and is not guaranteed to be a live endpoint.
+      operationId: demo_categorization
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+  /demo/stylos:
+    post:
+      tags:
+        - Stylos
+      summary: Stylos demo request
+      description:
+        Illustrative placeholder operation for Stylos. This is a documentation example and
+        is not guaranteed to be a live endpoint.
+      operationId: demo_stylos
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DemoRequest"
+      responses:
+        "200":
+          description: Illustrative successful demo response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DemoResponse"
+        "401":
+          description: Missing or invalid credentials
+        "422":
+          description: Invalid request
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API key
+  schemas:
+    DemoRequest:
+      type: object
+      required:
+        - input
+      properties:
+        request_id:
+          type: string
+          example: demo-001
+        input:
+          type: string
+          example: sample input
+        options:
+          type: object
+          additionalProperties: true
+    DemoResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            id:
+              type: string
+              example: demo-result-001
+            product:
+              type: string
+            status:
+              type: string
+              example: completed
+            result:
+              type: string
+              example: Illustrative result
+            confidence:
+              type: number
+              example: 0.94
+        request_id:
+          type: string
+          example: demo-001

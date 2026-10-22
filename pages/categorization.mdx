@@ -1,0 +1,60 @@
+---
+toc: false
+fullWidth: true
+---
+# Categorization
+
+Classify and label incoming text or records into consistent categories.
+
+> **Demo content:** The examples below are illustrative placeholders for product discovery and UI development. Confirm production endpoints, authentication, and response schemas with the product team before integrating.
+
+## What you can do
+
+- Integrate Categorization into an existing application through a documented API workflow.
+- Validate requests and inspect structured responses during development.
+- Adapt sample payloads to your domain, policies, and data requirements.
+
+## Example request
+
+```http
+POST /api/v1/categorization/demo
+Authorization: Bearer YOUR_API_KEY
+Content-Type: application/json
+```
+
+```json
+{
+  "request_id": "demo-001",
+  "input": "sample categorization input",
+  "options": {
+    "mode": "demo",
+    "include_explanation": true
+  }
+}
+```
+
+## Example response
+
+```json
+{
+  "success": true,
+  "data": {
+    "id": "demo-result-001",
+    "product": "Categorization",
+    "status": "completed",
+    "result": "Illustrative Categorization result",
+    "confidence": 0.94
+  },
+  "request_id": "demo-001"
+}
+```
+
+## Common use cases
+
+- **Product teams:** add classification capabilities to an application.
+- **Operations:** standardize repetitive workflows and outputs.
+- **Analytics:** pass structured results to reporting or downstream services.
+
+## Next steps
+
+Use the [Playground](/playground) to explore sample workflows, review the [API reference](/api), or [contact us](/contact) for access and production integration details.
