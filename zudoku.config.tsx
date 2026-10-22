@@ -70,6 +70,7 @@ const config: ZudokuConfig = {
       "playground",
     ],
   },
+  basePath: "/contactous-website",
   canonicalUrlOrigin: "https://contactous.com",
   sitemap: { siteUrl: "https://contactous.com" },
   site: {
