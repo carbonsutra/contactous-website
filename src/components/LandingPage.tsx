@@ -1,6 +1,6 @@
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden text-white">
+    <div className="flex min-h-screen flex-col overflow-x-hidden bg-white text-slate-900 dark:bg-[#05090e] dark:text-white">
       <main className="mx-auto flex w-full max-w-[1800px] flex-1 items-center px-5 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-2">
         <section
           style={{
@@ -23,24 +23,24 @@ export default function LandingPage() {
             <h1 className="mb-6 text-4xl font-extrabold leading-[1.05] tracking-[-0.055em] sm:text-5xl xl:text-7xl">
               Solving by
               <br />
-              <span className="inline-block max-w-full rounded-xl bg-gradient-to-r from-blue-500 via-cyan-300 to-emerald-600 px-2 py-1 text-black sm:px-3">
+              <span className="inline-block max-w-full rounded-xl bg-gradient-to-r from-blue-500 via-cyan-300 to-emerald-500 px-2 py-1 text-slate-950 sm:px-3">
                 Bespoke APIs
               </span>
             </h1>
 
-            <p className="mb-5 max-w-2xl text-base leading-relaxed text-slate-100 sm:text-lg">
+            <p className="mb-5 max-w-2xl text-base leading-relaxed text-slate-700 dark:text-slate-100 sm:text-lg">
               Building conversationsal data layer for Education, Publishers and
               Enterprises.
             </p>
 
-            <p className="mb-5 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
+            <p className="mb-5 max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300 sm:text-base sm:leading-8">
               For ten years, Contactous has built custom software that powers
               operations for enterprises and institutions. Today, we make
               complex data effortless to query using our specialized Text-to-SQL
               methodology and tailored AI systems.
             </p>
 
-            <p className="max-w-2xl text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
+            <p className="max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300 sm:text-base sm:leading-8">
               Our plug-and-play APIs deliver instant capabilities—from automated
               assessments and document parsing to data deduplication and carbon
               tracking. Built for leaders in enterprise, education, publishing,
@@ -51,12 +51,14 @@ export default function LandingPage() {
             <div className="mt-7 flex flex-wrap items-center gap-4 sm:gap-5">
               <a
                 href="/apis"
-                className="inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-cyan-400/60 bg-gradient-to-r from-blue-500/15 to-emerald-400/15 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:-translate-y-0.5 hover:border-emerald-400 sm:px-6"
+                className="inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-cyan-400/60 bg-gradient-to-r from-blue-500/15 to-emerald-400/15 px-5 py-3 text-sm font-semibold text-cyan-800 dark:text-cyan-100 transition hover:-translate-y-0.5 hover:border-emerald-400 sm:px-6"
               >
                 Explore APIs <span className="text-xl"></span>
               </a>
 
-              <span className="text-sm font-semibold text-slate-300">or</span>
+              <span className="text-sm font-semibold text-slate-600 dark:text-slate-300">
+                or
+              </span>
 
               <a
                 href="/solutions"
@@ -81,23 +83,35 @@ export default function LandingPage() {
         </section>
       </main>
 
-      <footer className="flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 px-5 py-6 text-xs text-slate-400 sm:px-8 sm:py-7 sm:text-sm lg:px-12">
-        <a href="/apis" className="transition hover:text-cyan-400">
+      <footer className="flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-slate-200 px-5 py-6 text-xs text-slate-500 dark:border-white/10 dark:text-slate-400 sm:px-8 sm:py-7 sm:text-sm lg:px-12">
+        <a
+          href="/apis"
+          className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+        >
           APIs
         </a>
         <a
           href="/solutions/enterprise"
-          className="transition hover:text-cyan-400"
+          className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
         >
           Solutions
         </a>
-        <a href="/playground" className="transition hover:text-cyan-400">
+        <a
+          href="/playground"
+          className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+        >
           Playground
         </a>
-        <a href="/about" className="transition hover:text-cyan-400">
+        <a
+          href="/about"
+          className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+        >
           About
         </a>
-        <a href="/contact" className="transition hover:text-cyan-400">
+        <a
+          href="/contact"
+          className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+        >
           Contact Us
         </a>
         <span className="sm:ml-auto">
